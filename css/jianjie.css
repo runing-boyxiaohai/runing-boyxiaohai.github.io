@@ -1,0 +1,157 @@
+/*去掉标签的默认样式*/
+body,h1,h2,h3,h4,h5,h6,p,pre,ol,ul,li,form,input,textarea,dl,dt,dd{
+  margin:0;
+  padding:0;
+}
+ul,ol,li{
+  list-style:none;
+  margin: 0;
+  padding:0;
+}
+span{
+  margin: 0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+}
+body{
+  background:#fff;
+}
+*{
+  font-family:"微软雅黑","宋体",sans-serif;
+}
+select,img{
+  border:none;
+}
+input{
+  outline:none;
+}
+.content1{
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+}
+.box{
+    	width: 260px;
+        height: 260px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+.box .xing{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border:8px solid rgba(250,250,250,0.3);
+        border-radius: 50%;
+        box-shadow: 0 0 1px rgba(0,0,0,0.8);
+        box-sizing:border-box;
+        border-bottom-color:yellowgreen;
+        border-right-color:yellowgreen;
+        z-index: 3;
+        transition:all 0.45s linear;
+    }
+    .box img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        z-index: 2;
+        transition:all 0.45s linear;
+    }
+    .box .zhao{
+        position: absolute;
+        top: 0;
+        right:-300px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        border-radius: 50%;
+        z-index: 1;
+        opacity: 0;
+         transition:all 0.45s linear;
+    }
+    .box .zhao h1{
+        color: #fff;
+        font-size:25px;
+        width: 50%;
+        margin: 50px 30%;
+        text-transform:uppercase;
+    }
+    .box .zhao h2{
+        color: #fff;
+        font-size:14px;
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-top: 1px solid #fff;
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+     .box:hover .xing{
+    	left: -100px;
+        transform:scale(0.5,0.5);
+    }
+    .box:hover img{
+        left: -100px;
+        transform:scale(0.5,0.5);
+    }
+    .box:hover .zhao{
+        right: 0px;
+        opacity: 1;
+    }
+.daohang .down1 a{
+	width: 100%;
+	line-height: 50px;
+    text-align: center;
+	color: #000;
+	font-size: 15px;
+	float: left;
+}
+.daohang .down1:nth-child(1) a{
+	background: #FFFFFF;
+}
+.down1 a:hover{
+	background: #fff;
+	color: red;
+}	
+.infor{
+	width: 800px;
+	height: 40px;
+	margin: 50px auto;
+	color: #333;
+	font-size: 20px;
+	border-bottom: 2px solid #CCCCCC;
+	line-height: 30px;
+	text-align: center;
+	animation:xian 2s linear 0s 1;
+}
+.infor-lis{
+	width: 800px;
+	height: auto;
+	margin:50px auto ;
+}
+.infor-lis p{
+	margin: 15px auto;
+	width: 800px;
+	text-align: center;
+	color: #666;
+	/*display: none;*/
+}
+@keyframes xian{
+   0%{ 
+         opacity: 0;
+         transform:scale(0.5,0.5);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1,1);
+    }
+ }
